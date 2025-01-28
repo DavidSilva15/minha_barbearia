@@ -1,0 +1,118 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    padding: 15px;
+}
+
+h1 {
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.modal-body {
+    background-color: #f8f9fa;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn {
+    width: 100%;
+}
+
+.card-body {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#agendamentos {
+    margin-top: 20px;
+}
+
+.orb {
+    width: 10px;
+    /* Reduzindo o tamanho do orb */
+    height: 10px;
+    /* Reduzindo o tamanho do orb */
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 10px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.orb-green {
+    background-color: green;
+    animation: glow-green 1.5s infinite alternate;
+    /* Brilho verde com animação mais rápida */
+}
+
+.orb-yellow {
+    background-color: yellow;
+    animation: glow-yellow 1.5s infinite alternate;
+    /* Brilho amarelo com animação mais rápida */
+}
+
+/* Animação para o brilho verde (brilho concentrado no centro) */
+@keyframes glow-green {
+    0% {
+        opacity: 0.8;
+        box-shadow: 0 0 3px green, 0 0 5px green;
+        /* Menor range de brilho */
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 5px green, 0 0 8px green;
+        /* Menor range de brilho */
+    }
+}
+
+/* Animação para o brilho amarelo (brilho concentrado no centro) */
+@keyframes glow-yellow {
+    0% {
+        opacity: 0.8;
+        box-shadow: 0 0 3px yellow, 0 0 5px yellow;
+        /* Menor range de brilho */
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 5px yellow, 0 0 8px yellow;
+        /* Menor range de brilho */
+    }
+}
